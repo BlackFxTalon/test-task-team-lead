@@ -1,0 +1,130 @@
+.promo {
+    background-color: #52acff;
+    background-image: linear-gradient(180deg, #52acff 25%, #ffe32c 100%);
+}
+#myVideo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.promo__descr {
+    color: var(--bs-indigo);
+}
+.promo__btn {
+    align-self: center;
+}
+.order__btn {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--bs-yellow);
+    color: var(--bs-indigo);
+    border-color: transparent;
+    width: 200px;
+    max-width: 100%;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+.order__btn:hover,
+.order__btn:focus,
+.order__btn:active {
+    background-color: var(--bs-indigo);
+    color: var(--bs-yellow);
+}
+.product-consist {
+    padding-top: 250px;
+    padding-bottom: 50px;
+    background-color: #4158d0;
+    background-image: linear-gradient(
+        43deg,
+        #4158d0 0%,
+        #c850c0 46%,
+        #ffcc70 100%
+    );
+}
+.product-consist img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.product-consist__left figure,
+.product-consist__right figure {
+    background-color: white;
+    padding: 50px 130px;
+    border-radius: 50%;
+}
+.reviews {
+    background-color: #fbda61;
+    background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+}
+.promo-2 {
+    background-color: #fa8bff;
+    background-image: linear-gradient(
+        45deg,
+        #fa8bff 0%,
+        #2bd2ff 52%,
+        #2bff88 90%
+    );
+}
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+}
+#new-price:hover,
+#new-price:active,
+#new-price:focus {
+    transform: scale(1.2);
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.order-form {
+    background-color: #ff9a8b;
+    background-image: linear-gradient(
+        90deg,
+        #ff9a8b 0%,
+        #ff6a88 55%,
+        #ff99ac 100%
+    );
+}
+
+.order-form fieldset input {
+    border-radius: 10px;
+    border-color: black;
+    padding: 10px;
+    color: black;
+    width: 100%;
+}
+.order-form fieldset input::placeholder {
+    color: black;
+}
+.order-form__left {
+    max-width: 200px;
+}
+@media (max-width: 768px) {
+    .promo__photo img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .order-form__left {
+        max-width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    #myVideo {
+        display: none;
+    }
+    .product-consist {
+        padding-top: 20px;
+    }
+    .product-consist__left figure,
+    .product-consist__right figure {
+        padding: 50px;
+    }
+}
